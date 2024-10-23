@@ -40,7 +40,7 @@ async function createSession() {
 
 // Main API route handler
 // export const runtime = 'nodejs';
-export const maxDuration = 300; // Set max duration to 300 seconds (5 minutes)
+export const maxDuration = 60; // Set max duration to 300 seconds (5 minutes)
 
 export async function POST(req: Request) {
   const { messages } = await req.json();
